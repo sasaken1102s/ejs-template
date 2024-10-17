@@ -1,0 +1,32 @@
+$hover: 0.35s all ease;
+
+$defWidth:1728;
+$defHeight:1117;
+$sp: 390;
+$spvh: 844;
+
+@function vw($pixel, $viewport:$defWidth) {
+    @return calc($pixel / $viewport) * 100vw;
+}
+
+@function vh($pixel, $viewport:$defHeight) {
+    @return calc($pixel / $viewport) * 100vh;
+}
+
+@function svh($pixel, $viewport:$defHeight) {
+    @return calc($pixel / $viewport) * 100svh;
+}
+
+@mixin vhsvh($value, $pro, $sw:$defWidth, $sh:$defHeight) {
+    #{$pro}: min(vh($value, $sh), vw($value, $sw));
+    #{$pro}: min(svh($value, $sh), vw($value, $sw));
+}
+
+@function lh($gyo, $fontsize) {
+    //xd・aiのline-height計算
+    @return calc($gyo / $fontsize);
+}
+
+@function flb($width, $prntWidth) {
+    @return unquote(calc($width/$prntWidth*100)+"%");
+}

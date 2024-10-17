@@ -1,0 +1,157 @@
+@mixin nun() {
+    font-family: 'Nunito Sans', 'Noto Sans', 'BIZ UDPGothic', "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", sans-serif;
+}
+
+@mixin px14() {
+    font-size: vw(14);
+    letter-spacing: .16em;
+    line-height: 1;
+    font-weight: 400;
+}
+
+@mixin px14_2() {
+    font-size: vw(14);
+    letter-spacing: .16em;
+    line-height: 1;
+    font-weight: 700;
+}
+
+@mixin px14_3() {
+    font-size: vw(14);
+    letter-spacing: .16em;
+    line-height: 2;
+    font-weight: 700;
+}
+
+@mixin px16() {
+    font-size: vw(16);
+    letter-spacing: .16em;
+    line-height: 1;
+    font-weight: 700;
+}
+
+@mixin px16_2() {
+    font-size: vw(16);
+    letter-spacing: .16em;
+    line-height: lh(34, 16);
+    font-weight: 400;
+}
+
+@mixin px18() {
+    font-size: vw(18);
+    letter-spacing: .16em;
+    line-height: 1;
+    font-weight: 400;
+}
+
+@mixin px18_2() {
+    font-size: vw(18);
+    letter-spacing: .16em;
+    line-height: 1;
+    font-weight: 700;
+}
+
+@mixin px20() {
+    font-size: vw(20);
+    letter-spacing: .16em;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+@mixin px20_2() {
+    font-size: vw(20);
+    letter-spacing: .16em;
+    line-height: lh(34, 20);
+    font-weight: 400;
+}
+
+@mixin px20_3() {
+    font-size: vw(20);
+    letter-spacing: .16em;
+    line-height: 1;
+    font-weight: 400;
+}
+
+@mixin px20_4() {
+    font-size: vw(20);
+    letter-spacing: .16em;
+    line-height: 2;
+    font-weight: 400;
+}
+
+@mixin px20_5() {
+    font-size: vw(20);
+    letter-spacing: .16em;
+    line-height: 1;
+    font-weight: 700;
+}
+
+@mixin px24() {
+    font-size: vw(24);
+    letter-spacing: .16em;
+    line-height: 1;
+    font-weight: 400;
+}
+
+@mixin px24_2() {
+    font-size: vw(24);
+    letter-spacing: .16em;
+    line-height: lh(38, 24);
+    font-weight: 700;
+}
+
+@mixin px24_3() {
+    font-size: vw(24);
+    letter-spacing: .16em;
+    line-height: lh(44, 24);
+    font-weight: 700;
+}
+
+@mixin px24_vert() {
+    font-size: vw(24);
+    letter-spacing: 0.3em;
+    line-height: 1;
+    font-weight: 400;
+}
+
+@mixin px28() {
+    font-size: vw(28);
+    letter-spacing: .16em;
+    line-height: lh(48, 28);
+    font-weight: 700;
+}
+
+@mixin px52() {
+    font-size: vw(52);
+    letter-spacing: .16em;
+    line-height: 1;
+    font-weight: 700;
+}
+
+@mixin px60() {
+    font-size: vw(60);
+    letter-spacing: .16em;
+    line-height: lh(92, 60);
+    font-weight: 700;
+}
+
+@mixin px60_2() {
+    font-size: vw(60);
+    letter-spacing: .16em;
+    line-height: 1;
+    font-weight: 700;
+}
+
+@mixin px80() {
+    font-size: vw(80);
+    letter-spacing: .16em;
+    line-height: 1;
+    font-weight: 700;
+}
+
+@mixin px180() {
+    font-size: vw(180);
+    letter-spacing: .16em;
+    line-height: 1;
+    font-weight: 700;
+}

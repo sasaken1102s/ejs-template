@@ -1,0 +1,66 @@
+/* html element 62.5% font-size for REM use */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 400 11px/1.4 'Roboto', "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", sans-serif;
+    color: #000;
+    overscroll-behavior-y: none;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+$sp:390;
+
+/* wrapper */
+.wrapper {
+    min-width: 1000px;
+    width: 100%;
+    position: relative;
+
+    @include mq() {
+        min-width: 0;
+    }
+
+    * {
+        scroll-margin-top: vw(100);
+
+        @include mq() {
+            scroll-margin-top: vw(50, $sp);
+        }
+    }
+}
+
+//* header */
+.header {}
+
+/* footer */
+.footer {}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+.svg-icon {
+    display: none;
+}
+
+
+.mq4 {
+    &pc {
+        @include mq() {
+            display: none;
+        }
+    }
+
+    &sp {
+        display: none;
+
+        @include mq() {
+            display: block;
+        }
+    }
+}

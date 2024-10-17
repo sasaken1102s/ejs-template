@@ -1,0 +1,75 @@
+@mixin hover ($touch: false, $highlight: false, $userSelect: false, $focus: true) {
+    // mouse
+    @at-root .mouse &:hover {
+      @content;
+    }
+    @if $focus == true {
+      @at-root .mouse &:focus {
+        @content;
+      }
+    }
+    // touch
+    @if $touch == true {
+      @at-root .touch &:active {
+        @content;
+      }
+      // $highlight
+      @if $highlight == false {
+        -webkit-tap-highlight-color: rgba(#000, 0);
+        appearance: none;
+      }
+      // $userSelect
+      @if $userSelect == false {
+        @at-root .touch & {
+          user-select: none;
+          input, select {
+            user-select: auto;
+          }
+        }
+      }
+    } @else if $touch == false {
+    } @else {
+      @warn 'mixin hover $touchの値が正しくありません';
+    }
+}
+
+@mixin active ($touch: true, $highlight: false, $userSelect: false) {
+    $e: &;
+  
+    // mouse
+    @at-root .mouse #{$e}:active {
+      @content;
+    }
+    // touch
+    @if $touch == true {
+      @at-root .touch #{$e}:active {
+        @content;
+      }
+      // $highlight
+      @if $highlight == false {
+        -webkit-tap-highlight-color: rgba(#000, 0);
+        appearance: none;
+      }
+      // $userSelect
+      @if $userSelect == false {
+        @at-root .touch #{$e} {
+          user-select: none;
+          input, select {
+            user-select: auto;
+          }
+        }
+      }
+    } @else if $touch == false {
+    } @else {
+      @warn 'mixin active $touchの値が正しくありません';
+    }
+}
+
+@mixin focus () {
+    @at-root .mouse &:focus {
+      @content;
+    }
+    @at-root .touch &:focus {
+      @content;
+    }
+}

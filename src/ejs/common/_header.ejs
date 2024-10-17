@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<% 
+        let sitename="",
+            url=""
+    %>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title><%= meta.title %>｜<%= sitename %></title>
+    <meta name="description" content="<%= meta.description %>">
+    <link rel="canonical" href="<%= url %><%= meta.path %>">
+    <meta property="og:title" content="<%= meta.title %>｜<%= sitename %>">
+    <meta property="og:description" content="<%= meta.description %>">
+    <meta property="og:url" content="<%= url %><%= meta.path %>>">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="<%= url %>img/ogp.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="<%= sitename %>">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link href="<%= sitename %>img/touch.png" rel="apple-touch-icon-precomposed">
+    <link rel="stylesheet" type="text/css" href="/css/style.css?1.0.1">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="header__inner">
+
+        </div>
+    </header>
